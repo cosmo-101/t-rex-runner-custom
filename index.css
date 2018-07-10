@@ -34,6 +34,8 @@
   width: 50%;
   flex-direction: column;
   transform: translateX(50%) translateY(-14%);
+  background: white;
+  border-radius: 0 0 5% 5%;
 }
 
 #container img{
@@ -77,7 +79,7 @@ section p, section a{
   font-size: 30px;
 }
 section a{
-  color: white;
+  color: cornflowerblue;
   transition: 0.25s ease-in-out;
 }
 section a:hover{
