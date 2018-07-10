@@ -37,11 +37,11 @@
 }
 
 #container img{
-  border: 10px solid sandybrown;
-  border-radius: 100%;
+  border: 7px solid sandybrown;
+  border-radius: 100%; /*100% 100% 0 0*/
   background-color: white;
   height: 92px;
-  padding: 15px;
+  padding: 15px;/*15px 15px 5px 15px*/
   margin-right: -20px;
   margin-left: -20px;
 }
@@ -53,6 +53,23 @@ h1, p {
 h1{
   font-size: 200px;
   height: 100px;
+  margin-top: -5%;
+}
+
+h1 span{
+  font-size: 15px;
+  position: absolute;
+  top: 29.5%;
+  color: tomato;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+h3{
+  margin-top: 25%;
+  font-size: 35px;
+  font-style: italic;
 }
 
 section p, section a{
