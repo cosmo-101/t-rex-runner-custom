@@ -1,0 +1,703 @@
+/* --------------------- Cabecera/Header ---------------------- */ 
+header.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    border-bottom: 0;
+}
+
+header.flex-container > section {
+    width: auto;
+    text-align: center;
+}
+
+header.flex-container section#language-not-logged {
+    align-self: flex-end;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+header.flex-container#logged section#language-not-logged {
+    display: none;
+}
+
+header.flex-container:not(#logged) > section:last-child {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+header.flex-container > section > div:first-child {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+header.flex-container img.logo{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+header.flex-container div.logo-text{
+    display: flex;
+    justify-content: center;
+}
+
+header.flex-container div.logo-text div:last-child{
+    margin-left: 15px;
+    font-size: 30px;
+    height: 15px;
+    font-weight: bold;
+}
+
+header.flex-container div.logo-text span{
+    color: #007C8A;
+}
+
+header.flex-container:not(#logged) .nav-item {
+    font-size: 1rem;
+    display: inline-block;
+    margin: 25px 10px 0;
+}
+
+header.flex-container:not(#logged) .nav-item:not(.language-links) a {
+    background: #fff;
+    color: #0075b4;
+    font-weight: 400;
+    border: 1px solid #0075b4;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header.flex-container:not(#logged) .nav-item:not(.language-links) a:hover {
+    background-color: #0075b4;
+    color: #fff;
+}
+
+.global-header .hamburger-menu {
+    display: none;
+}
+
+.mobile-menu {
+    border-bottom: 1px solid #0075b4;
+    margin: 0;
+}
+
+
+        /* --------------------- Cabecera/Header > Logueado/Logged ---------------------- */ 
+
+#logged {
+    justify-content: initial;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #0075b4;
+}
+
+#logged > section:last-child {
+    align-self: flex-end;
+    width: 100%;
+}
+
+#logged > section:last-child > nav {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    padding: 0 20px 10px 20px;
+}
+    
+header.flex-container div.language-links{
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#logged > section:last-child > nav div:not(.language-links) a {
+    color: #313131;
+    padding: 22px 22px 17px 22px;
+    text-decoration: none;
+    transition: unset;
+    text-align: left;
+}
+
+#logged > section:last-child > nav .right-nav-2 a{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+#logged > section:last-child > nav .right-nav-2 a .username{
+    padding-right: 10px;
+}
+
+#logged > section:last-child > nav div:not(.language-links) a:hover  {
+    border-bottom: 4px solid #0075b4;
+    background: #e6e6e6;
+}
+
+#logged > section:last-child > nav .language-links a, header.flex-container .language-links a {
+    text-decoration: none;
+    transition: unset;
+    color: black;
+    font-size: 80%;
+}
+
+#logged > section:last-child > nav .language-links a:hover {
+    color: #0075b4;
+}
+
+#logged > section:last-child > nav .language-links a.active-language, header.flex-container .language-links a.active-language  {
+    color: #0075b4 !important;
+    font-size: 100%;
+    pointer-events: none;
+    outline: none;
+    cursor: default;
+}
+
+#logged > section:last-child > nav .language-links a.active-language i, header.flex-container .language-links a.active-language i {
+    display: inline-block;
+}
+
+#logged > section:last-child > nav .language-links a i, header.flex-container .language-links a i{
+    display: none;
+}
+
+#logged > section:last-child > nav img  {
+    vertical-align: bottom;
+    border: 1px solid #e7e7e7;
+    margin: -10px 5px;
+    border-radius: 5px;
+    width: 40px;
+}
+
+#logged .right-nav-3{
+    margin-bottom: -20px;
+}
+
+#logged .right-nav-3 a{
+    padding: 10px 22px 10px 22px !important;
+}
+
+#logged #dropdownMenuButton{
+    color: black !important;
+    box-shadow: unset;
+    border-color: transparent;
+    outline: none !important;
+    transition: unset;
+    padding: 20px 0px 17px 0px;
+    border-bottom: 4px solid transparent !important;
+    width: 35px;
+    height: 65px;
+    background-color: transparent;
+}
+
+#logged #dropdownMenuButton:hover{
+    border-bottom: 4px solid #0075b4 !important;
+    background: #e6e6e6 !important;
+}
+
+#logged #dropdownMenuButton:focus{
+    border-bottom: 4px solid #0075b4 !important;
+    background: #e6e6e6 !important;
+}
+
+#logged #dropdownMenuButton span{
+    transition: 0.65s ease-in-out;
+}
+
+#logged #dropdownMenuButton:focus span{
+    color: #0075b4 !important;
+    transition: 0.65s ease-in-out;
+    transform:rotate(360deg); 
+    font-size: 150%;
+}
+
+#logged .active-tab{
+    border-bottom: 4px solid #0075b4 !important;
+    background: #e6e6e6 !important;
+}
+
+#logged .right-nav-3 div.dropdown-menu {
+    position: absolute;
+    right: 20px;
+    width: 153px;
+    margin-top: -.5px;
+    background-color: white;
+    border-bottom: 1px solid #0075b4;
+    border-right: 1px solid #0075b4;
+    border-left: 1px solid #0075b4;
+    display: none;
+    z-index: 9999;
+}
+
+#logged .right-nav-3 div.dropdown-menu a{
+    border-bottom: none;
+    display: block;
+}
+
+#logged .right-nav-3 div.dropdown-menu a:hover{
+    border-bottom: none !important;
+}
+
+#logged button:active:not(:disabled), #logged button:focus:not(:disabled), #logged .button:active:not(:disabled), #logged .button:focus:not(:disabled), #logged #dropdownMenuButton,#logged .btn-secondary:not(:disabled):not(.disabled).active:focus, #logged .btn-secondary:not(:disabled):not(.disabled):active:focus, #logged .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: unset;
+}
+
+#logged .btn-secondary:not(:disabled):not(.disabled).active, #logged .btn-secondary:not(:disabled):not(.disabled):active, #logged .show>.btn-secondary.dropdown-toggle {
+    color: black;
+    background-color: unset;
+    border-color: transparent;
+}
+#language-settings-form{
+    display: none;
+}
+
+        /* --------------------- Fin Cabecera/Header > Logueado/Logged  ---------------------- */ 
+
+
+
+/* --------------------- Fin Cabecera/Header ---------------------- */ 
+
+
+
+
+/* --------------------- Banner Portada despues de cabecera ---------------------- */ 
+#content{
+    padding: 0;
+}
+
+div.content-wrapper.main-container{
+    margin-top: 0;
+}
+
+#main > .home > .courses-container{
+    padding: 0 20px 10px;
+}
+
+#main > .home > header{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+    
+.home > header .title {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: unset;
+    position: absolute;
+    animation: home-header-pop-up-custom 2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.home .outer-wrapper img{
+    min-height: 121px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+.home > header .outer-wrapper {
+     padding: unset;
+     max-width: unset;
+}
+
+.home>header .outer-wrapper{
+    animation: unset;
+    animation-fill-mode: unset;
+    animation-delay: unset;
+}
+
+/* --------------------- Fin Banner Portada despues de cabecera ---------------------- */ 
+
+
+/* --------------------- Footer ---------------------- */
+
+footer.flex-container {
+    display: flex;
+    align-items: center;
+    background: #fcfcfc;
+    border-top: 1px solid #e6e6e6;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+footer.flex-container section {
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+footer.flex-container .language {
+    padding-left: 35px;
+    text-align: left;
+}
+
+footer.flex-container section:nth-child(1),
+footer.flex-container section:nth-child(3) {
+    width: 70%;
+}
+
+footer.flex-container section:nth-child(2) {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 40px 0;
+}
+
+footer.flex-container select {
+    vertical-align: super;
+}
+
+footer.flex-container ul {
+    list-style: none;
+    width: 100%;
+    border: none;
+    list-style-type: none;
+}
+
+footer.flex-container ul li {
+    text-align: left;
+    padding-top: 15px;
+}
+
+footer.flex-container ul li a {
+    margin: 0;
+}
+
+footer.flex-container a {
+    text-decoration: none !important;
+    color: #0075b4;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+footer.flex-container a.social-media:hover {
+    text-decoration: none;
+   color: #043282;
+}
+
+footer.flex-container a:not(.social-media):hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+footer.flex-container i {
+    font-size: 40px;
+}
+
+footer.flex-container .copyright {
+    margin-top: 20px;
+}
+
+footer.flex-container .copyright i {
+    font-size: 20px;
+}
+
+/* --------------------- Fin Footer ---------------------- */
+
+
+
+
+/* --------------------- Media queries ---------------------- */ 
+
+@media screen and (max-width: 768px) and (min-width: 541px) {
+    .home>header .title {
+        width: unset;
+    }
+}
+
+@media (max-width: 368px){
+    header.flex-container.global-header {
+        justify-content: unset !important;
+    }
+}
+
+@media (max-width: 600px){
+    .outer-wrapper img{
+        min-height: 121px;
+        max-height: 300px;
+        width: 100%;
+        height: 100%;
+        object-fit: unset;
+    }
+    .home> header .title {
+        top: unset;
+        left: unset;
+        transform: unset;
+        position: unset;
+        width: 100% !important;
+    } 
+    footer.flex-container{
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    footer.flex-container section{
+        width: 100% !important;
+    }
+    footer.flex-container .logo{
+        margin-top: 20px;
+    }
+    footer.flex-container section:last-child{
+        margin-bottom: 40px;
+    }
+    footer.flex-container .language{
+        padding-left: 0;
+        text-align: center;
+    }
+    footer.flex-container section:nth-child(2){
+        border: 0;
+    }
+    footer.flex-container ul{
+        padding: 0;
+    }
+    footer.flex-container ul li{
+        text-align: center;
+    }
+}
+
+@media (max-width: 610px){
+    header.flex-container.global-header {
+        justify-content: center;
+        border-bottom: 0;
+    }
+    header.flex-container > section:last-child {
+        display: none;
+    }
+    header.flex-container img.logo{
+        margin: 0;
+    }
+}
+
+@media (max-width: 669px){
+    #logged.global-header .hamburger-menu {
+        display: inline;
+        right: 20px;
+        left: unset;
+    }
+}
+
+@media (min-width: 670px){
+    .hidden-mobile:not(.mobile-nav-link) {
+        display: unset;
+    }
+}
+
+@media (max-width: 768px){
+    header.flex-container:not(#logged) .hamburger-menu {
+        display: inline;
+        right: 20px;
+        left: unset;
+    }
+    header.flex-container:not(#logged) > section:not(:first-child) {
+        display: none;
+    }
+}
+
+@media (max-width: 849px){
+    #logged .hidden-mobile:not(.mobile-nav-link) {
+        display: none;
+    }
+    #logged.global-header .hamburger-menu {
+        display: inline;
+        right: 20px;
+        left: unset;
+    }
+    .mobile-menu .language-links span{
+        display: none;
+    }
+}
+/* --------------------- Fin media queries ---------------------- */ 
+
+
+
+/* --------------------- Animaciones ---------------------- */ 
+@keyframes home-header-pop-up-custom{
+    0%{opacity:0;top:100%}
+    50%{top:20%}
+    100%{opacity:1;top:50%}
+}
+@keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+/* --------------------- Fin Animaciones ---------------------- */ 
+
+
+/* Paginas de error, status/estado 404, 500 etc */
+
+body.status-error header.flex-container{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+body.status-error header.flex-container section:last-child{
+    align-self: flex-end;
+    margin-bottom: 0 !important;
+}
+
+body.status-error #container-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+body.status-error #container-status h1{
+    margin-top: 30px;
+}
+
+body.status-error #container-status h1 span{
+    font-style: italic;
+    color: tomato;
+}
+
+body.status-error #container-status > article{
+    padding: 40px 110px;
+    background-color: lightblue;
+}
+
+body.status-error #container-status > article li{
+    margin-top: 20px;
+}
+
+/* FIN de Paginas de error, status/estado 404, 500 etc */
+
+
+
+/* T-REX-RUNNER GAME
+ * Copyright 2013 The Chromium Authors. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+    #main-frame-error > p {
+        position: absolute;
+        margin-top: 30px;
+        transform: translateX(50%);
+        animation: blink 2s ease-in-out infinite;
+    }
+
+    .icon {
+        -webkit-user-select: none;
+        user-select: none;
+        display: inline-block;
+    }
+
+    .icon-offline {
+        content: -webkit-image-set( url(assets/default_100_percent/100-error-offline.png) 1x, url(assets/default_200_percent/200-error-offline.png) 2x);
+        position: relative;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    /* Offline page */
+
+    .offline .interstitial-wrapper {
+        color: #2b2b2b;
+        font-size: 1em;
+        line-height: 1.55;
+        margin: 0 auto;
+        max-width: 600px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .offline .runner-container {
+        height: 200px;
+        max-width: 600px;
+        overflow: hidden;
+        /*position: absolute;*/
+        width: 44px;
+        top: 260px;
+    }
+
+    .offline .runner-canvas {
+        height: 200px !important;
+        max-width: 600px;
+        opacity: 1;
+        overflow: hidden;
+        /*position: absolute;*/
+        top: 0;
+        z-index: 2;
+    }
+
+    .offline .controller {
+        background: rgba(247, 247, 247, .1);
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    #offline-resources {
+        display: none;
+    }
+
+    @media (max-width: 420px) {
+        .suggested-left>#control-buttons,
+        .suggested-right>#control-buttons {
+            float: none;
+        }
+        .snackbar {
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+
+    @media (max-height: 350px) {
+        h1 {
+            margin: 0 0 15px;
+        }
+        .icon-offline {
+            margin: 0 0 10px;
+        }
+        .interstitial-wrapper {
+            margin-top: 5%;
+        }
+        .nav-wrapper {
+            margin-top: 30px;
+        }
+    }
+
+    @media (min-width: 600px) and (max-width: 736px) and (orientation: landscape) {
+        .offline .interstitial-wrapper {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    @media (min-width: 420px) and (max-width: 736px) and (min-height: 240px) and (max-height: 420px) and (orientation:landscape) {
+        .interstitial-wrapper {
+            margin-bottom: 100px;
+        }
+    }
+
+    @media (min-height: 240px) and (orientation: landscape) {
+        .offline .interstitial-wrapper {
+            margin-bottom: 0px;
+        }
+        .icon-offline {
+            margin-bottom: 20px;
+        }
+    }
+
+    @media (max-height: 320px) and (orientation: landscape) {
+        .icon-offline {
+            margin-bottom: 0;
+        }
+        .offline .runner-container {
+            top: 10px;
+        }
+    }
+
+    @media (max-width: 240px) {
+        .interstitial-wrapper {
+            overflow: inherit;
+            padding: 0 8px;
+        }
+    }
+
+  /* FIN de T-REX-RUNNER GAME */
