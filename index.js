@@ -467,7 +467,7 @@
                     'from { width:' + Trex.config.WIDTH + 'px }' +
                     'to { width: ' + this.dimensions.WIDTH + 'px }' +
                     '}';
-                document.styleSheets[0].insertRule(keyframes, 0);
+                document.styleSheets[1].insertRule(keyframes, 0);
 
                 this.containerEl.addEventListener(Runner.events.ANIM_END,
                     this.startGame.bind(this));

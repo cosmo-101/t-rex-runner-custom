@@ -551,12 +551,34 @@ body.status-error #container-status h1 span{
 }
 
 body.status-error #container-status > article{
-    padding: 40px 110px;
+    padding: 40px 110px 30px 110px;
     background-color: lightblue;
+    border-radius: 10%;
+}
+
+body.status-error #container-status > article ul{
+    list-style-type: circle;
 }
 
 body.status-error #container-status > article li{
     margin-top: 20px;
+    height: 20px;
+}
+
+body.status-error #container-status > article li:hover{
+    color: white;
+    transition: 0.1 ease-in-out;
+    font-size: 150%;
+}
+
+body.status-error #container-status > article a{
+    text-decoration: none;
+    border-radius: 15%;
+}
+
+body.status-error #container-status > article a:hover{
+    background-color: white;
+    transition: 0.1 ease-in-out;
 }
 
 /* FIN de Paginas de error, status/estado 404, 500 etc */
