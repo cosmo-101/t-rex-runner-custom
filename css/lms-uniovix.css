@@ -395,119 +395,6 @@ footer.flex-container .copyright i {
 
 
 
-
-/* --------------------- Media queries ---------------------- */ 
-
-@media screen and (max-width: 768px) and (min-width: 541px) {
-    .home>header .title {
-        width: unset;
-    }
-}
-
-@media (max-width: 368px){
-    header.flex-container.global-header {
-        justify-content: unset !important;
-    }
-}
-
-@media (max-width: 600px){
-    .outer-wrapper img{
-        min-height: 121px;
-        max-height: 300px;
-        width: 100%;
-        height: 100%;
-        object-fit: unset;
-    }
-    .home> header .title {
-        top: unset;
-        left: unset;
-        transform: unset;
-        position: unset;
-        width: 100% !important;
-    } 
-    footer.flex-container{
-        flex-wrap: wrap;
-        padding-top: 0;
-    }
-    footer.flex-container section{
-        width: 100% !important;
-    }
-    footer.flex-container .logo{
-        margin-top: 20px;
-    }
-    footer.flex-container section:last-child{
-        margin-bottom: 40px;
-    }
-    footer.flex-container .language{
-        padding-left: 0;
-        text-align: center;
-    }
-    footer.flex-container section:nth-child(2){
-        border: 0;
-    }
-    footer.flex-container ul{
-        padding: 0;
-    }
-    footer.flex-container ul li{
-        text-align: center;
-    }
-}
-
-@media (max-width: 610px){
-    header.flex-container.global-header {
-        justify-content: center;
-        border-bottom: 0;
-    }
-    header.flex-container > section:last-child {
-        display: none;
-    }
-    header.flex-container img.logo{
-        margin: 0;
-    }
-}
-
-@media (max-width: 669px){
-    #logged.global-header .hamburger-menu {
-        display: inline;
-        right: 20px;
-        left: unset;
-    }
-}
-
-@media (min-width: 670px){
-    .hidden-mobile:not(.mobile-nav-link) {
-        display: unset;
-    }
-}
-
-@media (max-width: 768px){
-    header.flex-container:not(#logged) .hamburger-menu {
-        display: inline;
-        right: 20px;
-        left: unset;
-    }
-    header.flex-container:not(#logged) > section:not(:first-child) {
-        display: none;
-    }
-}
-
-@media (max-width: 849px){
-    #logged .hidden-mobile:not(.mobile-nav-link) {
-        display: none;
-    }
-    #logged.global-header .hamburger-menu {
-        display: inline;
-        right: 20px;
-        left: unset;
-    }
-    .mobile-menu .language-links span{
-        display: none;
-    }
-}
-/* --------------------- Fin media queries ---------------------- */ 
-
-
-
 /* --------------------- Animaciones ---------------------- */ 
 @keyframes home-header-pop-up-custom{
     0%{opacity:0;top:100%}
@@ -556,6 +443,10 @@ body.status-error #container-status > article{
     border-radius: 10%;
 }
 
+body.status-error #container-status > article h5{
+    text-align: center;
+}
+
 body.status-error #container-status > article ul{
     list-style-type: circle;
 }
@@ -594,6 +485,7 @@ body.status-error #container-status > article a:hover{
         margin-top: 30px;
         transform: translateX(50%);
         animation: blink 2s ease-in-out infinite;
+        text-align: center;
     }
 
     .icon {
@@ -723,3 +615,131 @@ body.status-error #container-status > article a:hover{
     }
 
   /* FIN de T-REX-RUNNER GAME */
+
+
+  
+
+
+/* --------------------- Media queries ---------------------- */ 
+
+@media screen and (max-width: 768px) and (min-width: 541px) {
+    .home>header .title {
+        width: unset;
+    }
+}
+
+@media (max-width: 368px){
+    header.flex-container.global-header {
+        justify-content: unset !important;
+    }
+}
+
+@media (max-width: 600px){
+    .outer-wrapper img{
+        min-height: 121px;
+        max-height: 300px;
+        width: 100%;
+        height: 100%;
+        object-fit: unset;
+    }
+    .home> header .title {
+        top: unset;
+        left: unset;
+        transform: unset;
+        position: unset;
+        width: 100% !important;
+    } 
+    footer.flex-container{
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    footer.flex-container section{
+        width: 100% !important;
+    }
+    footer.flex-container .logo{
+        margin-top: 20px;
+    }
+    footer.flex-container section:last-child{
+        margin-bottom: 40px;
+    }
+    footer.flex-container .language{
+        padding-left: 0;
+        text-align: center;
+    }
+    footer.flex-container section:nth-child(2){
+        border: 0;
+    }
+    footer.flex-container ul{
+        padding: 0;
+    }
+    footer.flex-container ul li{
+        text-align: center;
+    }
+}
+
+@media (max-width: 610px){
+    header.flex-container.global-header {
+        justify-content: center;
+        border-bottom: 0;
+    }
+    header.flex-container > section:last-child {
+        display: none;
+    }
+    header.flex-container img.logo{
+        margin: 0;
+    }
+}
+
+@media (max-width: 669px){
+    #logged.global-header .hamburger-menu {
+        display: inline;
+        right: 20px;
+        left: unset;
+    }
+}
+
+@media (min-width: 670px){
+    .hidden-mobile:not(.mobile-nav-link) {
+        display: unset;
+    }
+}
+
+@media (max-width: 768px){
+    header.flex-container:not(#logged) .hamburger-menu {
+        display: inline;
+        right: 20px;
+        left: unset;
+    }
+    header.flex-container:not(#logged) > section:not(:first-child) {
+        display: none;
+    }
+    
+    #main-frame-error > p {
+        position: relative;
+        text-align: center;
+        transform: translateX(0);
+    }
+
+    body.status-error #container-status > article{
+        width: 100%;
+    }
+
+    body.status-error .hamburger-menu{
+        display: none !important;
+    }
+}
+
+@media (max-width: 849px){
+    #logged .hidden-mobile:not(.mobile-nav-link) {
+        display: none;
+    }
+    #logged.global-header .hamburger-menu {
+        display: inline;
+        right: 20px;
+        left: unset;
+    }
+    .mobile-menu .language-links span{
+        display: none;
+    }
+}
+/* --------------------- Fin media queries ---------------------- */ 
