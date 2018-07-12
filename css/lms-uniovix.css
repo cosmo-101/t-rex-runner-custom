@@ -433,14 +433,16 @@ body.status-error #container-status h1{
 }
 
 body.status-error #container-status h1 span{
-    font-style: italic;
-    color: tomato;
+    color: #ff3333;
 }
 
 body.status-error #container-status > article{
     padding: 40px 110px 30px 110px;
-    background-color: lightblue;
-    border-radius: 10%;
+    background-color: #D9EDF7;
+    border-radius: 5%;
+    -moz-box-shadow:    5px 5px 10px #777;
+    -webkit-box-shadow: 5px 5px 10px #777;
+    box-shadow:         5px 5px 10px #777;
 }
 
 body.status-error #container-status > article h5{
@@ -457,7 +459,6 @@ body.status-error #container-status > article li{
 }
 
 body.status-error #container-status > article li:hover{
-    color: white;
     transition: 0.1 ease-in-out;
     font-size: 150%;
 }
@@ -467,10 +468,6 @@ body.status-error #container-status > article a{
     border-radius: 15%;
 }
 
-body.status-error #container-status > article a:hover{
-    background-color: white;
-    transition: 0.1 ease-in-out;
-}
 
 /* FIN de Paginas de error, status/estado 404, 500 etc */
 

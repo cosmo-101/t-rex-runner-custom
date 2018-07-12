@@ -535,7 +535,7 @@
                 // First jump triggers the intro.
                 if (this.tRex.jumpCount == 1 && !this.playingIntro) {
                     this.playIntro();
-                    $("#main-frame-error > p").hide()
+                    $("#main-frame-error > p").hide();
                 }
 
                 // The horizon doesn't move until the intro is over.
